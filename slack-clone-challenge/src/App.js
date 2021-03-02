@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <container>
+        <Container>
           <Header />
 
           <Main>
@@ -25,7 +25,7 @@ function App() {
               </Route>
             </Switch>
           </Main>
-        </container>
+        </Container>
       </Router>
     </div>
   );
@@ -33,6 +33,9 @@ function App() {
 
 export default App;
 
-const container = styled.div``;
+const Container = styled.div`
+background: orange;
+width:100%;
+height:100vh;`;
 
 const Main = styled.div``;
