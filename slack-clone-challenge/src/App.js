@@ -34,10 +34,16 @@ function App() {
 export default App;
 
 const Container = styled.div`
-background: orange;
+
 width:100%;
-height:100vh;`;
+height:100vh;
+background: orange;
+display:grid;
+grid-template-rows:40px auto;`;
 
 const Main = styled.div`
 background:green;
-height:100vh;`;
+display:grid;
+grid-template-columns:260px auto;
+
+`;
