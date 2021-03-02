@@ -9,7 +9,13 @@ function header() {
       <Main>
         <AccessTimeIcon />
 
-        <input type="text" placeholder="Search..." />
+        <SearchContainer>
+            <Search>
+            <input type="text" placeholder="Search..." />
+            </Search>
+        </SearchContainer>
+
+        
 
         <HelpOutlineIcon />
       </Main>
@@ -29,8 +35,27 @@ export default header;
 
 const Container = styled.div`
   background: #924444;
+ 
+  
+
+ 
+
 `;
 
-const Main = styled.div``;
+const Main = styled.div`
+display:flex;
+align-items:center;
+
+
+`;
 
 // const UserContainer = styled.div``;
+
+
+const SearchContainer = styled.div``;
+
+
+const Search = styled.div``;
+
+
+
