@@ -41,6 +41,7 @@ export default header;
 
 const Container = styled.div`
   background: #924444;
+  display:flex;
  
   
 
@@ -50,8 +51,6 @@ const Container = styled.div`
 
 const Main = styled.div`
 display:flex;
-align-items:center;
-
 
 `;
 
@@ -66,9 +65,13 @@ const Search = styled.div``;
 
 
 const UserContainer = styled.div`
+display:flex;
 `;
+
 
 const UserImage = styled.div`
 `;
+
+
 const Name = styled.div`
 `;
