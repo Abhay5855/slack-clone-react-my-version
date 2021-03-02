@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components'
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 function header() {
   return (
     <Container>
@@ -10,6 +11,8 @@ function header() {
            < AccessTimeIcon />
 
            <input type="text" placeholder="Search..." />
+
+           < HelpOutlineIcon />
 
 
          </Main>
