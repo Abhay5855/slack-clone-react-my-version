@@ -40,3 +40,4 @@ const container = styled.div`
 `;
 
 
+const Main = styled.div``;
