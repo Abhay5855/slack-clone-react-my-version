@@ -15,11 +15,11 @@ function App() {
     <Switch>
 
     <Route path="/room">
-      Chat
+      <Chat />
     </Route>
 
     <Route path="/">
-      Login
+      <Login />
     </Route>
 
     </Switch>
