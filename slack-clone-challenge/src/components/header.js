@@ -42,6 +42,7 @@ export default header;
 const Container = styled.div`
   background: #924444;
   display:flex;
+  color:white;
  
   
 
@@ -70,6 +71,12 @@ display:flex;
 
 
 const UserImage = styled.div`
+
+
+img {
+    height:32px;
+    border:1px solid white;
+}
 `;
 
 
