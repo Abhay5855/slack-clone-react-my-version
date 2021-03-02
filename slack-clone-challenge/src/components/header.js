@@ -20,13 +20,19 @@ function header() {
         <HelpOutlineIcon />
       </Main>
 
-      {/* <UserContainer>
-        Abhay Patil
-        <img
+      <UserContainer>
+      <Name>
+         Abhay Patil
+      </Name>
+       
+       <UserImage>
+       <img
           src="https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png"
           alt="user"
         ></img>
-      </UserContainer> */}
+       </UserImage>
+       
+      </UserContainer>
     </Container>
   );
 }
@@ -49,7 +55,7 @@ align-items:center;
 
 `;
 
-// const UserContainer = styled.div``;
+
 
 
 const SearchContainer = styled.div``;
@@ -59,3 +65,10 @@ const Search = styled.div``;
 
 
 
+const UserContainer = styled.div`
+`;
+
+const UserImage = styled.div`
+`;
+const Name = styled.div`
+`;
