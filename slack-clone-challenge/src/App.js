@@ -2,6 +2,8 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Chat from "./components/chat";
 import Login from "./components/login";
+import styled from 'styled-components';
+import Header from './components/header';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
         <container>
           <Switch>
             <Route path="/room">
+            <Header />
               <Chat />
+             
             </Route>
 
             <Route path="/">
@@ -24,3 +28,8 @@ function App() {
 }
 
 export default App;
+
+
+const container = styled.div`
+`;
+
