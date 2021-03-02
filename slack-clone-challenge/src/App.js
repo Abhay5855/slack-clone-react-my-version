@@ -38,4 +38,6 @@ background: orange;
 width:100%;
 height:100vh;`;
 
-const Main = styled.div``;
+const Main = styled.div`
+background:green;
+height:100vh;`;
