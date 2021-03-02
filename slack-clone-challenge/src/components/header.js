@@ -9,6 +9,8 @@ function header() {
 
            < AccessTimeIcon />
 
+           <input type="text" placeholder="Search..." />
+
 
          </Main>
 
@@ -26,6 +28,7 @@ export default header;
 
 const Container = styled.div`
 
+background:#924444;
 
 
 `;
