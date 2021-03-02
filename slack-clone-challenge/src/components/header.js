@@ -1,11 +1,20 @@
-import React from 'react'
-
+import React from "react";
+import styled from 'styled-components'
 function header() {
-    return (
-        <div>
-            Header
-        </div>
-    )
+  return (
+    <Container>
+
+         Header
+    </Container>
+  )
+  
 }
 
-export default header
+export default header;
+
+
+
+const Container = styled.div`
+
+
+`;

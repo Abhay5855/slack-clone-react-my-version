@@ -2,7 +2,7 @@ import React from 'react'
 
 function sidebar() {
     return (
-        <div style={{background:"#924444"}}>
+        <div>
             sidebar
         </div>
     )
