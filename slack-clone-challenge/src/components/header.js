@@ -4,7 +4,14 @@ function header() {
   return (
     <Container>
 
-         Header
+         <Main>
+         
+
+         </Main>
+
+         {/* <UserContainer>
+
+         </UserContainer> */}
     </Container>
   )
   
@@ -17,4 +24,8 @@ export default header;
 const Container = styled.div`
 
 
+
 `;
+
+
+const Main = styled.div``;
