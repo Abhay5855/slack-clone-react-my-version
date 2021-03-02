@@ -42,7 +42,6 @@ display:grid;
 grid-template-rows:40px auto;`;
 
 const Main = styled.div`
-background:green;
 display:grid;
 grid-template-columns:260px auto;
 
