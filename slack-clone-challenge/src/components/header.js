@@ -14,14 +14,13 @@ function header() {
         <HelpOutlineIcon />
       </Main>
 
-      <UserContainer>
-          Abhay Patil
-
-         <img src="https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png" alt="user"></img>
-
-
-
-      </UserContainer>
+      {/* <UserContainer>
+        Abhay Patil
+        <img
+          src="https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png"
+          alt="user"
+        ></img>
+      </UserContainer> */}
     </Container>
   );
 }
@@ -34,4 +33,4 @@ const Container = styled.div`
 
 const Main = styled.div``;
 
-const UserContainer = styled.div``;
+// const UserContainer = styled.div``;
