@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
+
 function header() {
   return (
     <Container>
@@ -17,7 +17,9 @@ function header() {
       <UserContainer>
           Abhay Patil
 
-          
+         <img src="https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png" alt="user"></img>
+
+
 
       </UserContainer>
     </Container>
