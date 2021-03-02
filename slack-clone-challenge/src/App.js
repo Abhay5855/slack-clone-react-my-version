@@ -37,7 +37,7 @@ const Container = styled.div`
 
 width:100%;
 height:100vh;
-background: orange;
+background:#8C1D40;
 display:grid;
 grid-template-rows:40px auto;`;
 
