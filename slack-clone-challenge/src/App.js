@@ -4,6 +4,7 @@ import Chat from "./components/chat";
 import Login from "./components/login";
 import styled from 'styled-components';
 import Header from './components/header';
+import Sidebar from "./components/sidebar";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Main>
         <Switch>
             <Route path="/room">
+
+            <Sidebar />
            
               <Chat />
              
@@ -40,4 +43,8 @@ const container = styled.div`
 `;
 
 
-const Main = styled.div``;
+const Main = styled.div`
+`;
+
+
+
