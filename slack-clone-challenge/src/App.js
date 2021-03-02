@@ -10,9 +10,12 @@ function App() {
     <div className="App">
       <Router>
         <container>
-          <Switch>
+        <Header />
+
+        <Main>
+        <Switch>
             <Route path="/room">
-            <Header />
+           
               <Chat />
              
             </Route>
@@ -21,6 +24,9 @@ function App() {
               <Login />
             </Route>
           </Switch>
+
+        </Main>
+          
         </container>
       </Router>
     </div>
@@ -32,4 +38,5 @@ export default App;
 
 const container = styled.div`
 `;
+
 
