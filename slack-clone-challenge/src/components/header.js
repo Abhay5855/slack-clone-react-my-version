@@ -68,6 +68,7 @@ const SearchContainer = styled.div`
 
 min-width:400px;
 margin-left:15px;
+margin-right:15px;
 
 
 
@@ -76,8 +77,15 @@ margin-left:15px;
 
 const Search = styled.div`
 
+width:100%;
+display:flex;
+align-items:center;
+border-radius:6px;
 
-
+input {
+    background-color:transparent;
+    border:none;
+}
 
 
 `;
