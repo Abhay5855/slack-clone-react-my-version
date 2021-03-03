@@ -65,14 +65,22 @@ display:flex;
 
 
 const SearchContainer = styled.div`
-min-width:100%;
+
+min-width:400px;
+margin-left:15px;
 
 
 
 `;
 
 
-const Search = styled.div``;
+const Search = styled.div`
+
+
+
+
+
+`;
 
 
 
