@@ -54,6 +54,7 @@ const Container = styled.div`
 `;
 
 const Main = styled.div`
+
 display:flex;
 
 
@@ -73,6 +74,7 @@ const Search = styled.div``;
 
 const UserContainer = styled.div`
 display:flex;
+align-items:center;
 `;
 
 
