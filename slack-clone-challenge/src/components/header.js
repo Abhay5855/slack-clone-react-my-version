@@ -65,6 +65,10 @@ display:flex;
 
 
 const SearchContainer = styled.div`
+min-width:100%;
+
+
+
 `;
 
 
