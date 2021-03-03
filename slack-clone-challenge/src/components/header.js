@@ -42,6 +42,8 @@ export default header;
 const Container = styled.div`
   background: #924444;
   display:flex;
+  justify-content:space-between;
+  align-items:center;
   color:white;
   font-family:'Roboto', sans-serif;
  
@@ -54,12 +56,15 @@ const Container = styled.div`
 const Main = styled.div`
 display:flex;
 
+
+
 `;
 
 
 
 
-const SearchContainer = styled.div``;
+const SearchContainer = styled.div`
+`;
 
 
 const Search = styled.div``;
