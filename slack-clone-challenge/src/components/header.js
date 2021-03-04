@@ -42,10 +42,11 @@ export default header;
 const Container = styled.div`
   background: #924444;
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
   color:white;
   font-family:'Roboto', sans-serif;
+  position:relative;
  
   
 
