@@ -1,12 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
-import AppsIcon from '@material-ui/icons/Apps';
-import PeopleIcon from '@material-ui/icons/People';
-import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import InboxIcon from '@material-ui/icons/Inbox';
-import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
+
 function sidebar() {
   return (
     <Container>
@@ -23,62 +18,9 @@ function sidebar() {
 
           </AddLogo>
         
-      </Main>
-        
-      <InfoContainer>
+          </Main>
 
-      <Contents>
-
-      <ChatBubbleOutlineIcon/>
-      <Name>
-         Thread
-      </Name>
-
-      <InboxIcon/>
-      <Name>
-          All DMs
-      </Name>
-        
-
-
-        <DraftsIcon/>
-
-      <Name>
-          Mentions &  Reactions
-
-      </Name>
-
-      <BookmarkBorderIcon/>
-      <Name>
-           Save Items
-      </Name>
-
-      <PeopleIcon/>
-      <Name>
-           Peoples & Groups
-      </Name>
-
-      <AppsIcon/>
-      <Name>
-           More
-      </Name>
-
-      </Contents>
-
-      <ChannelContainer>
-
-      </ChannelContainer>
-
-      </InfoContainer>
-
-
-
-
-
-
-
-
-    </Container>
+     </Container>
   );
 }
 
