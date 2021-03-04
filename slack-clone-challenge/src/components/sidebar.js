@@ -47,5 +47,5 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 border-bottom:0.1px solid rgba(255, 255, 255, .5);
-padding: 8px 15px 8px 15px;
+padding: 10px 15px 8px 15px;
 `;
