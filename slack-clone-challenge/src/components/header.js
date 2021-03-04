@@ -40,7 +40,7 @@ function header() {
 export default header;
 
 const Container = styled.div`
-  background: #924444;
+  background: #E60A00;
   display:flex;
   justify-content:center;
   align-items:center;
