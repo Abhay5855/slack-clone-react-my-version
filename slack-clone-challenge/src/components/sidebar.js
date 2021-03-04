@@ -30,9 +30,16 @@ color:white;
 font-family: 'Baloo Bhai 2', cursive;
 `;
 
-const Title = styled.div``;
+const Title = styled.div`
+`;
 
-const AddLogo = styled.div``;
+const AddLogo = styled.div`
+border-radius:50%;
+
+`;
 
 const Main = styled.div`
-display:flex;`;
+display:flex;
+align-items:center;
+justify-content:space-between;
+`;
