@@ -81,7 +81,7 @@ width:100%;
 display:flex;
 align-items:center;
 border-radius:6px;
-color:white;
+
 
 input {
     background-color:transparent;
@@ -101,6 +101,7 @@ input:focus {
 const UserContainer = styled.div`
 display:flex;
 align-items:center;
+padding-right:16px;
 `;
 
 
