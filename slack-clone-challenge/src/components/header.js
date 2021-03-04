@@ -74,7 +74,7 @@ margin-right:15px;
 
 
 const Search = styled.div`
-box-shadow: inset 0 0 0 1px rgb(104 74 104);
+box-shadow: inset 0 0 0 1px white;
 width:100%;
 display:flex;
 align-items:center;

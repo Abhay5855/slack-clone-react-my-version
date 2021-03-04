@@ -23,6 +23,26 @@ function sidebar() {
 
       <Contents>
 
+      <Name>
+         Thread
+      </Name>
+      <Name>
+          All DMs
+      </Name>
+      <Name>
+          Mentions &  Reactions
+
+      </Name>
+      <Name>
+           Save Items
+      </Name>
+      <Name>
+           Peoples & Groups
+      </Name>
+      <Name>
+           More
+      </Name>
+
       </Contents>
 
       <ChannelContainer>
@@ -79,3 +99,6 @@ const Contents = styled.div``;
 
 
 const ChannelContainer = styled.div``;
+
+
+const Name  = styled.div``;
