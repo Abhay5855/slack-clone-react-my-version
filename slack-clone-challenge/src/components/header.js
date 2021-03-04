@@ -107,12 +107,10 @@ padding-right:15px;
 
 const UserImage = styled.div`
 
-   padding:3px 8px 3px 8px;
-
+   
 
 img {
-    height:32px;
-    border:1px solid white;
+    
 }
 `;
 
