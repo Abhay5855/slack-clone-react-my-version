@@ -1,13 +1,33 @@
 import React from 'react'
-
+import styled from 'styled-components'
 function chat() {
     return (
-        <div>
+        <Container>
 
-        Chat
+          
+          <ChatHeader>
+              <Title>
+                  AbhayPatil
+              </Title>
+          </ChatHeader>
+
+
+
+
+
+
+
+        
             
-        </div>
+        </Container>
     )
 }
 
 export default chat
+
+
+
+const Container = styled.div``;
+const ChatHeader = styled.div``;
+const Title = styled.div``;
+
