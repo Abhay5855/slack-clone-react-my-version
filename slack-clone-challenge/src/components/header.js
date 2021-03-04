@@ -101,7 +101,7 @@ input:focus {
 const UserContainer = styled.div`
 display:flex;
 align-items:center;
-padding-right:16px;
+padding-right:15px;
 `;
 
 
@@ -118,4 +118,4 @@ img {
 
 
 const Name = styled.div`
-`;
+padding-right:15px`;
