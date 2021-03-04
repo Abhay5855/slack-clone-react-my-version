@@ -30,4 +30,5 @@ const Title = styled.div``;
 
 const AddLogo = styled.div``;
 
-const Main = styled.div``;
+const Main = styled.div`
+display:flex;`;
