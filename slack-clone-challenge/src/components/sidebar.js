@@ -38,7 +38,8 @@ padding-top:8px;
 `;
 
 const AddLogo = styled.div`
-
+padding-right:15px;
+padding-top:8px;
 
 `;
 
@@ -46,4 +47,5 @@ const Main = styled.div`
 display:flex;
 align-items:center;
 justify-content:space-between;
+border-bottom:0.1px solid rgba(255, 255, 255, .5);
 `;
