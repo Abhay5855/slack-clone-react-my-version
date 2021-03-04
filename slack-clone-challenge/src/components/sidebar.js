@@ -24,7 +24,10 @@ function sidebar() {
 
 export default sidebar;
 
-const Container = styled.div``;
+const Container = styled.div`
+background:#323232;
+color:white;
+`;
 
 const Title = styled.div``;
 

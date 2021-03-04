@@ -48,10 +48,6 @@ const Container = styled.div`
   font-family:'Roboto', sans-serif;
   position:relative;
  
-  
-
- 
-
 `;
 
 const Main = styled.div`
