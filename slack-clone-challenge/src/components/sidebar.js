@@ -31,15 +31,14 @@ font-family: 'Baloo Bhai 2', cursive;
 `;
 
 const Title = styled.div`
-padding-left:15px;
+
 font-size:20px;
-padding-top:8px;
+
 
 `;
 
 const AddLogo = styled.div`
-padding-right:15px;
-padding-top:8px;
+
 
 `;
 
@@ -48,4 +47,5 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 border-bottom:0.1px solid rgba(255, 255, 255, .5);
+padding: 8px 15px 8px 15px;
 `;
