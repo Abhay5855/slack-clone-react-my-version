@@ -106,8 +106,8 @@ right:0;
 
 
 const UserImage = styled.div`
-width:26px;
-height:26px;
+width:32px;
+height:32px;
 border-radius: 3px;
 padding-bottom:4px;
    
