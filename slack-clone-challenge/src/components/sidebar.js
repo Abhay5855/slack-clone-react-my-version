@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import { SidebarItems } from "../data/Sidebardata";
 
 function sidebar() {
   return (
@@ -19,6 +20,22 @@ function sidebar() {
           </AddLogo>
         
           </Main>
+
+
+
+          <ChannelContainer>
+
+              {
+                  SidebarItems.map(item => (
+                      
+                      <ChannelContainerItem>
+                          {item.icon}
+                          {item.text}
+                      </ChannelContainerItem>
+
+                  ) )
+              }
+          </ChannelContainer>
 
      </Container>
   );
@@ -62,18 +79,13 @@ padding: 10px 15px 8px 15px;
 
 
 
-const InfoContainer = styled.div`
-display:grid;
-grid-column:1 auto;`;
 
 
-const Contents = styled.div`
-display:flex;
+
+
+const ChannelContainer = styled.div`
+Padding:10px 8px 10px 8px;`;
+
+
+const ChannelContainerItem  = styled.div`
 `;
-
-
-
-const ChannelContainer = styled.div``;
-
-
-const Name  = styled.div``;
