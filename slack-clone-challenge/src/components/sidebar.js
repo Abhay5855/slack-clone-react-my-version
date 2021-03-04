@@ -27,6 +27,7 @@ export default sidebar;
 const Container = styled.div`
 background:#323232;
 color:white;
+font-family: 'Baloo Bhai 2', cursive;
 `;
 
 const Title = styled.div``;
