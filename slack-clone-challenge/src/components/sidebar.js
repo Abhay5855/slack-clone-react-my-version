@@ -18,6 +18,26 @@ function sidebar() {
           </AddLogo>
         
       </Main>
+        
+      <InfoContainer>
+
+      <Contents>
+
+      </Contents>
+
+      <ChannelContainer>
+
+      </ChannelContainer>
+
+      </InfoContainer>
+
+
+
+
+
+
+
+
     </Container>
   );
 }
@@ -49,3 +69,13 @@ justify-content:space-between;
 border-bottom:0.1px solid rgba(255, 255, 255, .5);
 padding: 10px 15px 8px 15px;
 `;
+
+
+
+const InfoContainer = styled.div``;
+
+
+const Contents = styled.div``;
+
+
+const ChannelContainer = styled.div``;
