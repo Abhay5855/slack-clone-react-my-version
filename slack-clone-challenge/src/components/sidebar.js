@@ -98,7 +98,15 @@ font-size:20px;
 `;
 
 const AddLogo = styled.div`
-
+display:flex;
+width:36px;
+height:36px;
+background:white;
+border-radius:50%;
+color:#323232;
+fill:#323232;
+align-items:center;
+justify-content:center;
 
 `;
 
@@ -112,10 +120,15 @@ padding: 10px 15px 8px 15px;
 
 
 
-const InfoContainer = styled.div``;
+const InfoContainer = styled.div`
+display:grid;
+grid-column:1 auto;`;
 
 
-const Contents = styled.div``;
+const Contents = styled.div`
+display:flex;
+`;
+
 
 
 const ChannelContainer = styled.div``;
