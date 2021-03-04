@@ -1,27 +1,16 @@
 import "./App.css";
-import { useState } from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Chat from "./components/chat";
 import Login from "./components/login";
 import styled from "styled-components";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
-import {ThemeProvider} from "styled-components";
-import { GlobalStyles } from "./components/Globalstyle";
-import { lightTheme, darkTheme } from "./components/Themes"
+
 
 function App() {
 
 
-   const [theme , SetTheme]  = useState('light');
-
-   const themeToggler = () => {
-
-    theme === 'light' ? SetTheme('dark') : SetTheme('light')
-   }
-
-
-
+   
 
 
 
@@ -30,7 +19,15 @@ function App() {
 
 
   return (
+      
+   
+     
+
+
     <div className="App">
+       
+    
+
       <Router>
         <Container>
           <Header />
@@ -49,7 +46,13 @@ function App() {
           </Main>
         </Container>
       </Router>
+
+      
+    
     </div>
+
+    
+    
   );
 }
 
