@@ -11,6 +11,24 @@ import { GlobalStyles } from "./components/Globalstyle";
 import { lightTheme, darkTheme } from "./components/Themes"
 
 function App() {
+
+
+   const [theme , SetTheme]  = useState('light');
+
+   const themeToggler = () => {
+
+    theme === 'light' ? SetTheme('dark') : SetTheme('light')
+   }
+
+
+
+
+
+
+
+
+
+
   return (
     <div className="App">
       <Router>
