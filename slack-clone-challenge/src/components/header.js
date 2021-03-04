@@ -109,6 +109,7 @@ const UserImage = styled.div`
 width:26px;
 height:26px;
 border:2px solid white;
+border-radius: 3px;
    
 
 img {
