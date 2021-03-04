@@ -84,8 +84,22 @@ padding: 10px 15px 8px 15px;
 
 
 const ChannelContainer = styled.div`
-Padding:10px 8px 10px 8px;`;
+Padding-top:20px;`;
 
 
 const ChannelContainerItem  = styled.div`
+
+display:grid;
+grid-template-columns: 15% auto;
+height:30px;
+cursor:pointer;
+align-items:center;
+padding-left:10px;
+
+:hover {
+
+    background:#E60A00;
+
+}
+
 `;
