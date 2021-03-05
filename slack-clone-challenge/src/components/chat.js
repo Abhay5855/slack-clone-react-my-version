@@ -5,38 +5,21 @@ import InfoIcon from "@material-ui/icons/Info";
 function chat() {
   return (
     <Container>
-           
+      <MessageContainer>
+        <Header>
+          <Title>
+            #AbhayPatil
+            <StarBorderIcon />
+          </Title>
 
-           <Header>
+          <Details>
+            Details
+            <InfoIcon />
+          </Details>
+        </Header>
 
-              <Title>
-                   #AbhayPatil
-
-                   <StarBorderIcon />
-              </Title>
-
-              <Details>
-                  
-                      Details
-                      <InfoIcon />
-                  
-              </Details>
-
-           </Header>
-
-
-           <Profile>
-
-           </Profile>
-
-
-
-          
-        
-      
-        
-         
-
+        <Profile>Full-stack developer & student at Sinhgad Institute.</Profile>
+      </MessageContainer>
     </Container>
   );
 }
@@ -44,25 +27,34 @@ function chat() {
 export default chat;
 
 const Container = styled.div`
-`;
+font-family:'RocknRoll One', sans-serif;
+font-size:15px;`;
 
 const Header = styled.div`
-display:flex;
-align-items:center;
-justify-content:space-between;`;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:8px 20px 5px 20px;
+`;
 
-const  Title = styled.div`
-display:flex;
-align-items:center;`;
+const Title = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 const Details = styled.div`
-display:flex;
-align-items:center;
+  display: flex;
+  align-items: center;
+`;
+
+const Profile = styled.div`
+padding-left:20px;
 
 
 `;
 
-const Profile = styled.div``;
 
 
-
+const MessageContainer = styled.div`
+border-bottom: 0.1px solid black;
+`;
