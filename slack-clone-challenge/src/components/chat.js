@@ -27,7 +27,8 @@ function chat() {
 export default chat;
 
 const Container = styled.div`
-font-size:15px;
+display:grid;
+grid-template-rows:64px auto min-content;
 font-family: "Baloo Bhai 2", cursive;`;
 
 const Header = styled.div`
@@ -35,6 +36,7 @@ const Header = styled.div`
   align-items: center;
   justify-content: space-between;
   padding:8px 20px 5px 20px;
+  font-weight:400px;
 `;
 
 const Title = styled.div`
