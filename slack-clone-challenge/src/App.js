@@ -23,12 +23,14 @@ function App() {
 
     useEffect (() => {
       
-      console.log("hello abhay");
+
+      getChannels();
+     
 
     }, [])
     
 
-    getChannels();
+    
 
 
 
