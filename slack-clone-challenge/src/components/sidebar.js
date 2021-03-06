@@ -132,16 +132,22 @@ grid-template-columns: 1 auto;
 padding:0px 0px 0px 15px;
 height:10px;
 cursor:pointer;
+width:50%;
+
+
+
+
+
 `;
 
 
 const ChannelTypes = styled.div`
-display:grid;
-grid-template-columns: 1 auto;
-
-:hover{
+  :hover{
   background: #e60a00;
+  
+  
 }
+
 
 
 `;
