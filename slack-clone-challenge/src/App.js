@@ -8,6 +8,34 @@ import Sidebar from "./components/sidebar";
 import db from './firebase'
 
 function App() {
+
+
+    //  Databse
+
+    const getChannels = () => {
+      db.collection('rooms').onSnapshot((snapshot) => {
+
+        console.log(snapshot.docs);
+      })
+    }
+    
+
+    getChannels();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div className="App">
       <Router>
