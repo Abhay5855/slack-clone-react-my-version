@@ -19,6 +19,13 @@ function App() {
         console.log(snapshot.docs);
       })
     }
+
+
+    useEffect (() => {
+      
+      console.log("hello abhay");
+
+    }, [])
     
 
     getChannels();

@@ -27,8 +27,8 @@ function chat() {
 export default chat;
 
 const Container = styled.div`
-font-family:'RocknRoll One', sans-serif;
-font-size:15px;`;
+font-size:15px;
+font-family: "Baloo Bhai 2", cursive;`;
 
 const Header = styled.div`
   display: flex;
