@@ -36,12 +36,21 @@ function sidebar(props) {
         </ChannelHeader>
 
         <ChannelNames>
-        <ChannelTypes>
-        #random
-        </ChannelTypes>
-        <ChannelTypes>
-        #general
-        </ChannelTypes>
+
+
+        {
+          props.rooms.map(item => (
+               
+
+            <ChannelTypes>
+
+            # {item.name}
+      
+            </ChannelTypes>
+
+          ))
+        }
+        
         
         </ChannelNames>
       </MainChannels>
