@@ -3,7 +3,9 @@ import styled from "styled-components";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import { SidebarItems } from "../data/Sidebardata";
 import AddIcon from "@material-ui/icons/Add";
-function sidebar() {
+function sidebar(props) {
+
+  console.log(props);
   return (
     <Container>
       <Main>
