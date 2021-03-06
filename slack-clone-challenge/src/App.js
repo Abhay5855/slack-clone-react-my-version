@@ -21,7 +21,7 @@ function App() {
   //  Databse
 
   const getChannels = () => {
-    db.collection("rooms").onSnapshot((snapshot) => {
+    db.collection ('rooms').onSnapshot((snapshot) => {
       setRooms(snapshot.docs.map((doc) => {
              
         return{id: doc.id, name: doc.data().name}
@@ -41,7 +41,7 @@ function App() {
           <Header />
 
           <Main>
-            <Sidebar />
+            <Sidebar rooms={rooms} />
             <Switch>
               <Route path="/room">
                 <Chat />
