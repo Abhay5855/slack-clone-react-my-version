@@ -1,28 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-function ChatMessage() {
+function ChatMessage2() {
   return (
     <Container>
       <UserImage>
         <img
-          src="https://randomuser.me/api/portraits/women/29.jpg"
+          src="https://randomuser.me/api/portraits/women/44.jpg"
           alt="lady"
         />
       </UserImage>
 
       <MessageDetails>
         <Name>
-          Alice Hao
-          <span>06/03/2021 12:35:56 AM</span>
+          Anjie Lee
+          <span>07/04/2021 4:46:45 PM</span>
         </Name>
 
-        <Text>Hi! Your sketches are just awesome😍</Text>
+        <Text>Hey, Happy Birthday🎂 🎂</Text>
       </MessageDetails>
     </Container>
   );
 }
 
-export default ChatMessage;
+export default ChatMessage2;
 
 const Container = styled.div`
   padding: 15px 2px 8px 15px;
