@@ -3,6 +3,7 @@ import styled from "styled-components";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import InfoIcon from "@material-ui/icons/Info";
 import ChatInput from "./ChatInput";
+import ChatMessage from "./ChatMessage"
 function chat() {
   return (
     <Container>
@@ -22,7 +23,11 @@ function chat() {
         <Profile>Full-stack developer & student at Sinhgad Institute.</Profile>
       </MessageContainer>
 
-      <ChatContainer></ChatContainer>
+      <ChatContainer>
+
+      <ChatMessage />
+
+      </ChatContainer>
 
       <ChatInput />
     </Container>
