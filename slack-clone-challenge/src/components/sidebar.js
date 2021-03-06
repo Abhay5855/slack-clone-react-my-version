@@ -44,7 +44,7 @@ function sidebar(props) {
         Channels
 
         <ChannelIcon>
-          <AddIcon />
+          <AddIcon onClick ={addChannels} />
         </ChannelIcon>
 
         </ChannelHeader>
