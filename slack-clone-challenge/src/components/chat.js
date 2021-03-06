@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import InfoIcon from "@material-ui/icons/Info";
+import ChatInput from "./ChatInput";
 function chat() {
   return (
     <Container>
@@ -20,6 +21,10 @@ function chat() {
 
         <Profile>Full-stack developer & student at Sinhgad Institute.</Profile>
       </MessageContainer>
+
+      <ChatContainer></ChatContainer>
+
+      <ChatInput />
     </Container>
   );
 }
@@ -27,16 +32,17 @@ function chat() {
 export default chat;
 
 const Container = styled.div`
-display:grid;
-grid-template-rows:64px auto min-content;
-font-family: "Baloo Bhai 2", cursive;`;
+  display: grid;
+  grid-template-rows: 64px auto min-content;
+  font-family: "Baloo Bhai 2", cursive;
+`;
 
 const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:8px 20px 5px 20px;
-  font-weight:400px;
+  padding: 8px 20px 5px 20px;
+  font-weight: 400px;
 `;
 
 const Title = styled.div`
@@ -50,13 +56,11 @@ const Details = styled.div`
 `;
 
 const Profile = styled.div`
-padding-left:20px;
-
-
+  padding-left: 20px;
 `;
-
-
 
 const MessageContainer = styled.div`
-border-bottom: 0.1px solid black;
+  border-bottom: 0.1px solid black;
 `;
+
+const ChatContainer = styled.div``;
