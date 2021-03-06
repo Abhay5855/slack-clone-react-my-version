@@ -30,8 +30,37 @@ export default ChatInput
 
 
 const Container = styled.div`
-background:#89A1AB;`;
+padding: 0px 18px 22px 18px;
+
+`;
 
 
-const InputContainer = styled.div``;
-const SendButton = styled.div``;
+const InputContainer = styled.div`
+border: 1px solid black;
+border-radius:4px;
+
+form {
+    display:flex;
+    height:44px;
+    align-items:center;
+    padding-left:18px;
+
+    input {
+        flex:1;
+        border:none;
+        font-size:15px;
+    }
+
+    input:focus {
+        outline:none;
+    }
+
+}
+`;
+
+
+
+
+
+const SendButton = styled.div`
+`;
