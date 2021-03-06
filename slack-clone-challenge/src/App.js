@@ -1,52 +1,38 @@
 import "./App.css";
-import { useEffect } from 'react';
+import { useEffect , useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Chat from "./components/chat";
 import Login from "./components/login";
 import styled from "styled-components";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
-import db from './firebase'
+import db from "./firebase";
 
 function App() {
 
 
-    //  Databse
 
-    const getChannels = () => {
-      db.collection('rooms').onSnapshot((snapshot) => {
-
-        snapshot.docs.map((doc) => {
-          console.log(doc.data());
-        })
-      })
-    }
-
-
-    useEffect (() => {
-      
-
-      getChannels();
-     
-
-    }, [])
-    
-
-    
+  const [rooms, setRooms] = useState([]);
 
 
 
 
 
+  //  Databse
 
+  const getChannels = () => {
+    db.collection("rooms").onSnapshot((snapshot) => {
+      setRooms(snapshot.docs.map((doc) => {
+             
+        return{id: doc.id, name: doc.data().name}
 
+      }));
+    });
+  };
 
-
-
-
-
-
-
+  useEffect(() => {
+    getChannels();
+  }, []);
 
   return (
     <div className="App">
