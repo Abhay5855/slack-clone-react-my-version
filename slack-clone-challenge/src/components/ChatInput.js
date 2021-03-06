@@ -116,6 +116,7 @@ const InputContainer = styled.div`
     align-items: center;
     padding-left: 15px;
     border-bottom: 0.5px solid black;
+    border-width:thin;
 
     input {
       border: none;
@@ -148,11 +149,27 @@ const SendButton = styled.div`
 
 `;
 const MessageFunctions = styled.div`
+display:flex;
+align-items:center;
+position:relative;
+padding-top:5px;
+cursor:pointer;
+
 `;
 
 
 
-const RightSideIcons = styled.div``;
+const RightSideIcons = styled.div`
+display:flex;
+align-items:center;
+position:absolute;
+right:0;
+padding-right:8px;
+
+`;
 
 
-const LeftSideIcons = styled.div``;
+const LeftSideIcons = styled.div`
+padding-left:8px;
+margin-right:5px;
+`;
