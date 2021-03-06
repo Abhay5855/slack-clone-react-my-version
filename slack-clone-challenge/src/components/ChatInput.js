@@ -63,4 +63,21 @@ form {
 
 
 const SendButton = styled.div`
+
+background:#007a5a;
+border-radius:2px;
+width:32px;
+height:32px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-right:5px;
+cursor:pointer;
+
+
+
+
+
+
+
 `;
