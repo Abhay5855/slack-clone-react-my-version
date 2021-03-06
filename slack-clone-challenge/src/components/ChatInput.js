@@ -75,9 +75,9 @@ margin-right:5px;
 cursor:pointer;
 
 
-
-
-
-
+.MuiSvgIcon-root {
+    width:20px;
+    color:white;
+}
 
 `;
