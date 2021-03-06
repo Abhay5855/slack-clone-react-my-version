@@ -5,6 +5,7 @@ import Login from "./components/login";
 import styled from "styled-components";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
+import db from './firebase'
 
 function App() {
   return (
