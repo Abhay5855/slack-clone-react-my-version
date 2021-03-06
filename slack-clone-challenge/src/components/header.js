@@ -80,6 +80,10 @@ display:flex;
 align-items:center;
 border-radius:6px;
 
+placeholder {
+  color:white;
+}
+
 
 input {
     background-color:transparent;
