@@ -16,7 +16,9 @@ function App() {
     const getChannels = () => {
       db.collection('rooms').onSnapshot((snapshot) => {
 
-        console.log(snapshot.docs);
+        snapshot.docs.map((doc) => {
+          console.log(doc.data());
+        })
       })
     }
 
