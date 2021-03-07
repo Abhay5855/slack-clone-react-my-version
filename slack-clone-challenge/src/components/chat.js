@@ -5,7 +5,34 @@ import InfoIcon from "@material-ui/icons/Info";
 import ChatInput from "./ChatInput";
 import ChatMessage from "./ChatMessage";
 import ChatMessage2 from "./ChatMessage2";
-function chat() {
+import db from "../firebase";
+import { useParams } from "react-router-dom";
+function Chat() {
+
+    
+
+    let { channelId } =  useParams();
+
+
+  const getChannel = () => {
+    db.collection('rooms')
+    .doc(channelId)
+    .onSnapshot((snapshot) => {
+      console.log(snapshot.data());
+    })
+  }
+  
+
+
+  getChannel();
+
+
+
+
+
+
+
+
   return (
     <Container>
       <MessageContainer>
@@ -39,7 +66,7 @@ function chat() {
   );
 }
 
-export default chat;
+export default Chat;
 
 const Container = styled.div`
   display: grid;
