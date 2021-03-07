@@ -22,9 +22,12 @@ function Chat() {
     })
   }
   
+  
+  useEffect(()=> {
+    getChannel();
+  }, [channelId])
 
-
-  getChannel();
+  
 
 
 
