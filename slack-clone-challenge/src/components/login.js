@@ -9,8 +9,16 @@ function login() {
 
         auth.signInWithPopup(provider)
         .then((result) => {
-            console.log(result.user)
+
+            const newUser = {
+                name: result.user.displayName,
+                photo: result.user.photoURL,
+            }
+           
+            console.log(newUser);
         })
+
+        
 
         .catch((error) => {
             alert(error.message)
