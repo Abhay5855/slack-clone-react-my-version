@@ -6,12 +6,16 @@ import ChatInput from "./ChatInput";
 import ChatMessage from "./ChatMessage";
 import ChatMessage2 from "./ChatMessage2";
 import db from "../firebase";
-import { useParams , useEffect } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useEffect , useState} from 'react';
+ 
 function Chat() {
 
     
 
     let { channelId } =  useParams();
+
+    const [channel , setChannel] = useState();
 
 
   const getChannel = () => {
