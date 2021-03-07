@@ -49,7 +49,7 @@ function App() {
         :
       
         <Container>
-          <Header />
+          <Header user={user}/>
 
           <Main>
             <Sidebar rooms={rooms} />
