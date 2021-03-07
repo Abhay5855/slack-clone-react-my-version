@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import {auth, provider} from "../firebase"
-function login() {
+function login(props) {
 
 
 
@@ -15,7 +15,7 @@ function login() {
                 photo: result.user.photoURL,
             }
            
-            console.log(newUser);
+            props.setUser(newUser);
         })
 
         

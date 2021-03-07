@@ -58,9 +58,9 @@ function App() {
                 <Chat />
               </Route>
 
-              <Route path="/">
+              {/* <Route path="/">
                 <Login />
-              </Route>
+              </Route> */}
             </Switch>
           </Main>
         </Container>
