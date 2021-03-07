@@ -51,8 +51,9 @@ function sidebar(props) {
 
         <ChannelNames>
 
-
-        {
+         
+         
+         {
           props.rooms.map(item => (
                
 
@@ -64,6 +65,9 @@ function sidebar(props) {
 
           ))
         }
+        
+
+        
         
         
         </ChannelNames>
@@ -115,6 +119,7 @@ const ChannelContainerItem = styled.div`
   cursor: pointer;
   align-items: center;
   padding-left: 10px;
+  position:relative;
 
   :hover {
     background: #e60a00;
@@ -143,26 +148,20 @@ const ChannelIcon = styled.div`
 const ChannelNames = styled.div`
 display:grid;
 grid-template-columns: 1 auto;
-padding:0px 0px 0px 15px;
 height:10px;
 cursor:pointer;
+padding:0px 0px 0px 15px;
 width:50%;
-
-
-
 
 
 `;
 
 
 const ChannelTypes = styled.div`
-  :hover{
-  background: #e60a00;
-  
-  
+:hover {
+  background:#e60a00;
 }
-
-
-
 `;
+
+
 
