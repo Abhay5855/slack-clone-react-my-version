@@ -72,7 +72,7 @@ function sidebar(props) {
           props.rooms.map(item => (
                
 
-            <ChannelTypes>
+            <ChannelTypes onClick={()=> goToChannel(item.id)}>
 
             # {item.name}
       
