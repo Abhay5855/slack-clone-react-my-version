@@ -27,9 +27,9 @@ function header({ user }) {
        
        <UserImage>
        <img
-          src="https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png"
-          alt="user"
-        ></img>
+          src={user.photo}
+          alt="profile"/>
+       
        </UserImage>
        
       </UserContainer>
