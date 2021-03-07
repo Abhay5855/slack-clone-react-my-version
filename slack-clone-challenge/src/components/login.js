@@ -1,7 +1,14 @@
 import React from 'react'
 import styled from "styled-components"
+import {auth, provider}
 function login() {
     return (
+
+
+
+        const signIn = () => {
+
+        }
         <Container>
 
         <Contents>
