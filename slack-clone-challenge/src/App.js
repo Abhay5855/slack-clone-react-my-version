@@ -15,6 +15,9 @@ function App() {
   const [rooms, setRooms] = useState([]);
 
 
+  const [user, setUser] = useState();
+
+
 
 
 
