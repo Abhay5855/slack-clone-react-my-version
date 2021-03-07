@@ -45,7 +45,7 @@ function App() {
       {
         !user ?
 
-        <Login />
+        <Login setUser = {setUser}/ >
         :
       
         <Container>
