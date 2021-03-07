@@ -3,7 +3,7 @@ import styled from "styled-components";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 
-function header(props) {
+function header({ user }) {
   return (
     <Container>
       <Main>
@@ -22,7 +22,7 @@ function header(props) {
 
       <UserContainer>
       <Name>
-         {props.user.name}
+         {user.name}
       </Name>
        
        <UserImage>
