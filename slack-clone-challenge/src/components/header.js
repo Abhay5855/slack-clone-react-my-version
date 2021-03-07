@@ -25,7 +25,7 @@ function header({ user,signOut }) {
          {user.name}
       </Name>
        
-       <UserImage onClick = {signOut}>
+       <UserImage onClick={signOut} >
        <img
           src={user.photo}
           alt="profile"/>
@@ -114,6 +114,7 @@ width:32px;
 height:32px;
 border-radius: 3px;
 padding-bottom:4px;
+cursor:pointer;
    
 
 img {
