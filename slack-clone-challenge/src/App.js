@@ -6,6 +6,7 @@ import Login from "./components/login";
 import styled from "styled-components";
 import Header from "./components/header";
 import Sidebar from "./components/sidebar";
+import {auth, provider} from "./firebase";
 import db from "./firebase";
 
 function App() {
@@ -29,9 +30,20 @@ function App() {
              
         return{id: doc.id, name: doc.data().name}
 
-      }));
-    });
-  };
+      }))
+    })
+  }
+
+
+  const signOut = () => {
+        auth.signOut().then(()=> {
+            localStorage.removeItem('user');
+            setUser(null);
+        })
+  }
+
+
+
 
   useEffect(() => {
     getChannels();
@@ -49,7 +61,7 @@ function App() {
         :
       
         <Container>
-          <Header user={user}/>
+          <Header signOut={signOut} user={user}/>
 
           <Main>
             <Sidebar rooms={rooms} />
