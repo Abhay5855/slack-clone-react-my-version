@@ -8,6 +8,16 @@ import { useHistory } from "react-router-dom"
 function sidebar(props) {
 
 
+  const history = useHistory();
+  
+
+
+  const goToChannel = (id) => {
+    if(id){
+      history.push(`/room/${id}`)
+    }
+  }
+
 
 
   const addChannels = () => {
@@ -19,6 +29,10 @@ function sidebar(props) {
       })
     }
   }
+
+
+
+ 
 
   
   return (
