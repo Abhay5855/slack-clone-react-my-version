@@ -40,6 +40,14 @@ function App() {
   return (
     <div className="App">
       <Router>
+
+
+      {
+        !user ?
+
+        <Login />
+        :
+      
         <Container>
           <Header />
 
@@ -56,6 +64,7 @@ function App() {
             </Switch>
           </Main>
         </Container>
+      }
       </Router>
     </div>
   );
