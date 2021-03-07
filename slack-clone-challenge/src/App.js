@@ -15,7 +15,7 @@ function App() {
   const [rooms, setRooms] = useState([]);
 
 
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
 
 
 
