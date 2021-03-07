@@ -1,14 +1,29 @@
 import React from 'react'
 import styled from "styled-components"
-import {auth, provider}
+import {auth, provider} from "../firebase"
 function login() {
+
+
+
+    const signIn = () => {
+
+        auth.signInWithPopup(provider)
+        .then((result) => {
+            console.log(result.user)
+        })
+
+        .catch((error) => {
+            alert(error.message)
+        })
+
+
+
+    }
     return (
 
 
 
-        const signIn = () => {
-
-        }
+        
         <Container>
 
         <Contents>
@@ -18,7 +33,7 @@ function login() {
           <h1>Sign in Slack</h1>
 
 
-           <SigninButton>
+           <SigninButton onClick = {() => signIn()}>
 
           Sign In With Google
 
