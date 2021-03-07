@@ -5,7 +5,7 @@ function ChatMessage({ text, name, image, timestamp}) {
     <Container>
       <UserImage>
         <img
-          src="https://randomuser.me/api/portraits/women/29.jpg"
+          src={image}
           alt="lady"
         />
       </UserImage>
@@ -13,7 +13,7 @@ function ChatMessage({ text, name, image, timestamp}) {
       <MessageDetails>
         <Name>
           {name}
-          <span>06/03/2021 12:35:56 AM</span>
+          <span>{new Date(timestamp.toDate()).toUTCString()}</span>
         </Name>
 
         <Text>{text}</Text>
@@ -31,8 +31,8 @@ const Container = styled.div`
 `;
 
 const UserImage = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 2px;
   overflow: hidden;
   margin-right: 8px;
