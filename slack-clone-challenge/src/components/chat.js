@@ -1,53 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
+// import StarBorderIcon from "@material-ui/icons/StarBorder";
 import InfoIcon from "@material-ui/icons/Info";
 import ChatInput from "./ChatInput";
 import ChatMessage from "./ChatMessage";
 import ChatMessage2 from "./ChatMessage2";
 import db from "../firebase";
 import { useParams } from "react-router-dom";
-import { useEffect , useState} from 'react';
- 
+
 function Chat() {
+  let { channelId } = useParams();
 
-    
-
-    let { channelId } =  useParams();
-
-    const [channel , setChannel] = useState();
-
+  const [channel, setChannel] = useState();
 
   const getChannel = () => {
     db.collection('rooms')
-    .doc(channelId)
-    .onSnapshot((snapshot) => {
-      console.log(snapshot.data());
-    })
+      .doc(channelId)
+      .onSnapshot((snapshot) => {
+        setChannel(snapshot.data());
+      })
   }
-  
-  
-  useEffect(()=> {
+
+  useEffect(() =>{
     getChannel();
   }, [channelId])
-
-  
-
-
-
-
-
-
-
 
   return (
     <Container>
       <MessageContainer>
         <Header>
           <Title>
-            #AbhayPatil
-            <StarBorderIcon />
+            # {channel.name}
+        
           </Title>
+
+
 
           <Details>
             Details
@@ -59,13 +46,9 @@ function Chat() {
       </MessageContainer>
 
       <ChatContainer>
+        <ChatMessage />
 
-      <ChatMessage />
-      
-      <ChatMessage2 />
-
-
-
+        <ChatMessage2 />
       </ChatContainer>
 
       <ChatInput />
