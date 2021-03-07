@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-function ChatMessage() {
+function ChatMessage({ text, name, image, timestamp}) {
   return (
     <Container>
       <UserImage>
@@ -12,11 +12,11 @@ function ChatMessage() {
 
       <MessageDetails>
         <Name>
-          Alice Hao
+          {name}
           <span>06/03/2021 12:35:56 AM</span>
         </Name>
 
-        <Text>Hi! Your sketches are just awesome😍</Text>
+        <Text>{text}</Text>
       </MessageDetails>
     </Container>
   );

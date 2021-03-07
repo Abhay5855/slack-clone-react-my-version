@@ -4,7 +4,8 @@ import styled from "styled-components";
 import InfoIcon from "@material-ui/icons/Info";
 import ChatInput from "./ChatInput";
 import ChatMessage from "./ChatMessage";
-import ChatMessage2 from "./ChatMessage2";
+
+
 import db from "../firebase";
 import { useParams } from "react-router-dom";
 
@@ -13,28 +14,39 @@ function Chat() {
 
   const [channel, setChannel] = useState();
 
+  const [messages, setMessages] = useState();
+
+  const getMessages = () => {
+    db.collection("rooms")
+      .doc(channelId)
+      .collection("messages")
+      .orderBy("timestamp", "asc")
+      .onSnapshot((snapshot) => {
+        let messages = snapshot.docs.map((doc) => doc.data());
+
+        setMessages(messages);
+      });
+  };
+
   const getChannel = () => {
-    db.collection('rooms')
+    db.collection("rooms")
       .doc(channelId)
       .onSnapshot((snapshot) => {
         setChannel(snapshot.data());
-      })
-  }
+      });
+  };
 
-  useEffect(() =>{
+  useEffect(() => {
     getChannel();
-  }, [channelId])
+
+    getMessages();
+  }, [channelId]);  //eslint-disable-line
 
   return (
     <Container>
       <MessageContainer>
         <Header>
-          <Title>
-            # {channel.name}
-        
-          </Title>
-
-
+          <ChannelName># {channel && channel.name}</ChannelName>
 
           <Details>
             Details
@@ -46,9 +58,21 @@ function Chat() {
       </MessageContainer>
 
       <ChatContainer>
-        <ChatMessage />
+            {
+              messages && 
+              messages.map((data, index)=> (
 
-        <ChatMessage2 />
+                <ChatMessage 
+
+                  text = {data.text}
+                  name = {data.name}
+                  image = {data.userImage}
+                  timestamp = {data.timestamp}
+                />
+
+              ))
+            }
+          
       </ChatContainer>
 
       <ChatInput />
@@ -72,7 +96,7 @@ const Header = styled.div`
   font-weight: 400px;
 `;
 
-const Title = styled.div`
+const ChannelName = styled.div`
   display: flex;
   align-items: center;
 `;
