@@ -53,11 +53,13 @@ const Name = styled.span`
   line-height: 1.3;
 
   span {
-    font-size: 16px;
+    font-size: 13px;
     margin-left: 8px;
     font-weight: 400px;
     color: rgb(97, 96, 97);
   }
 `;
 
-const Text = styled.div``;
+const Text = styled.div`
+padding-left:5px;
+`;
